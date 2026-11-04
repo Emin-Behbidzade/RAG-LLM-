@@ -1,0 +1,60 @@
+﻿model,question_id,type,question,answer,sources,seconds,azerbaijani_0_5,reasoning_0_5,faithfulness_0_5,auto_decision,needs_manual_review,notes,total_score,average_score
+qwen/qwen3.5-9b,Q01,fact,P-01 layihəsinin büdcəsi nə qədərdir?,"P-01 layihəsinin büdcəsi 90 000 AZN-dir.
+[P-01]",P-01,8.564,5,5,5,correct_answer,False,correct_answer; gözlənilən cavab: 90 000 AZN; gözlənilən mənbələr: ['P-01']; tapılan mənbələr: ['P-01'],15,5.0
+qwen/qwen3.5-9b,Q02,fact,Günəş enerjisi layihəsi hansı regiondadır?,Günəş enerjisi layihəsi Naxçıvan regionundadır. [P-07],"P-07, P-08, P-11",14.162,5,5,5,correct_answer,False,"correct_answer; gözlənilən cavab: Naxçıvan; gözlənilən mənbələr: ['P-07']; tapılan mənbələr: ['P-07', 'P-08', 'P-11']",15,5.0
+qwen/qwen3.5-9b,Q03,fact,Diaqnostika mərkəzi layihəsinin müddəti neçə aydır?,Diaqnostika mərkəzi layihəsinin müddəti 16 aydır. [P-20],"P-20, P-29, P-27",17.213,5,5,5,correct_answer,False,"correct_answer; gözlənilən cavab: 16 ay; gözlənilən mənbələr: ['P-20']; tapılan mənbələr: ['P-20', 'P-27', 'P-29']",15,5.0
+qwen/qwen3.5-9b,Q04,fact,P-03 hansı kateqoriyaya aiddir?,"P-03 layihəsi ""İnfrastruktur"" kateqoriyasına aiddir.
+
+İstifadə edilən mənbə ID-ləri: [P-03]",P-03,15.672,5,5,5,correct_answer,False,correct_answer; gözlənilən cavab: İnfrastruktur; gözlənilən mənbələr: ['P-03']; tapılan mənbələr: ['P-03'],15,5.0
+qwen/qwen3.5-9b,Q05,fact,Soyuducu anbar layihəsinin statusu nədir?,"Soyuducu anbar layihəsinin statusu ""Planlaşdırılır""dır.
+Mənbə: [P-29]","P-28, P-29, P-27",12.604,5,5,5,correct_answer,False,"correct_answer; gözlənilən cavab: Planlaşdırılır; gözlənilən mənbələr: ['P-29']; tapılan mənbələr: ['P-27', 'P-28', 'P-29']",15,5.0
+qwen/qwen3.5-9b,Q06,calculation,Enerji səmərəliliyi layihəsi ilə Suvarma layihəsinin büdcə fərqi nə qədərdir?,"Təqdim olunan mənbələrdə ""Suvarma layihəsi"" haqqında heç bir məlumat göstərilməyib. Enerji səmərəliliyi layihəsinin büdcəsi 85 000 AZN təşkil edir, lakin suvarma layihəsinin büdcəsi bilinmir, ona görə də fərq hesablanmaya bilər.
+
+Bu məlumat təqdim olunan mənbələrdə göstərilməyib.","P-09, P-11, P-07",13.181,5,1,1,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: 5 000 AZN; gözlənilən mənbələr: ['P-01', 'P-09']; tapılan mənbələr: ['P-07', 'P-09', 'P-11']",7,2.33
+qwen/qwen3.5-9b,Q07,calculation,Ən yüksək büdcəli layihə hansıdır?,"Ən yüksək büdcəli layihə P-29 — Soyuducu anbar layihəsidir, çünki onun büdcəsi 205 000 AZN təşkil edir və bu göstərici digər layihələrdən (P-01: 90 000 AZN, P-26: 130 000 AZN) daha yüksəkdir.
+
+İstifadə edilən mənbə ID-ləri: P-01, P-26, P-29","P-01, P-26, P-29",14.342,5,1,0,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: Külək enerjisi layihəsi — 320 000 AZN; gözlənilən mənbələr: ['P-08']; tapılan mənbələr: ['P-01', 'P-26', 'P-29']",6,2.0
+qwen/qwen3.5-9b,Q08,calculation,P-01 və P-03 layihələrinin ümumi büdcəsi nə qədərdir?,"P-01 layihəsinin büdcəsi 90 000 AZN, P-03 layihəsinin büdcəsi isə 180 000 AZN təşkil edir. Bu iki layihənin ümumi büdcəsi 270 000 AZN-dir.
+
+İstifadə edilən mənbələr: [P-01], [P-03]","P-01, P-03",13.268,5,5,5,correct_answer,False,"correct_answer; gözlənilən cavab: 270 000 AZN; gözlənilən mənbələr: ['P-01', 'P-03']; tapılan mənbələr: ['P-01', 'P-03']",15,5.0
+qwen/qwen3.5-9b,Q09,calculation,10 aydan uzun müddətli layihələrdən üçünü yaz.,"P-26, P-30 və P-15 layihələri 10 aydan uzun müddətli deyil. P-26 layihəsinin müddəti 8 ay, P-15 layihəsinin müddəti 4 ay, P-30 layihəsinin isə 11 ay davam edir. Verilən kontekstdə 10 aydan uzun müddətli yalnız bir layihə (P-30) mövcuddur, üç layihə yoxdur. Bu məlumat təqdim olunan mənbələrdə göstərilməyib.
+
+İstifadə edilən mənbə ID-ləri: [P-26], [P-15], [P-30]","P-26, P-15, P-30",13.3,5,1,0,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: P-03, P-06, P-07; gözlənilən mənbələr: ['P-03', 'P-06', 'P-07']; tapılan mənbələr: ['P-15', 'P-26', 'P-30']",6,2.0
+qwen/qwen3.5-9b,Q10,calculation,Ən uzunmüddətli layihə neçə ay davam edir?,"Ən uzunmüddətli layihə P-29 layihəsidir və 13 ay davam edir.
+
+İstifadə edilən mənbə ID-ləri: [P-27], [P-29], [P-26]","P-27, P-29, P-26",13.47,5,1,0,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: 18 ay; gözlənilən mənbələr: ['P-08']; tapılan mənbələr: ['P-26', 'P-27', 'P-29']",6,2.0
+qwen/qwen3.5-9b,Q11,unknown,P-01 layihəsinin rəhbəri kimdir?,P-01 layihəsinin rəhbəri kimdir? Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,P-01,17.007,5,5,5,correct_refusal,False,correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-01'],15,5.0
+qwen/qwen3.5-9b,Q12,unknown,Günəş enerjisi layihəsini hansı şirkət maliyyələşdirir?,"Günəş enerjisi layihəsini (P-07) maliyyələşdirən şirkət təqdim olunan mənbələrdə göstərilməyib.
+
+Bu məlumat təqdim olunan mənbələrdə göstərilməyib.","P-07, P-08, P-12",14.111,5,5,5,correct_refusal,False,"correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-07', 'P-08', 'P-12']",15,5.0
+qwen/qwen3.5-9b,Q13,unknown,Layihələrdə neçə işçi çalışır?,Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,"P-13, P-09, P-06",12.184,5,5,5,correct_refusal,False,"correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-06', 'P-09', 'P-13']",15,5.0
+qwen/qwen3.5-9b,Q14,unknown,P-02 layihəsi hansı tarixdə tamamlanacaq?,"P-02 layihəsinin tamamlanma tarixi təqdim olunan mənbələrdə göstərilməyib.
+Mənbə ID: [P-02]",P-02,13.258,5,5,5,correct_refusal,True,correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-02'],15,5.0
+qwen/qwen3.5-9b,Q15,unknown,Layihələrin gəlirliliyi neçə faizdir?,Layihələrin gəlirliliyi (ROI) təqdim olunan mənbələrdə göstərilməyib.,"P-09, P-26, P-27",27.945,5,5,5,correct_refusal,True,"correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-09', 'P-26', 'P-27']",15,5.0
+google/gemma-3-4b-it,Q01,fact,P-01 layihəsinin büdcəsi nə qədərdir?,"90 000 AZN
+
+ID: P-01",P-01,0.386,4,5,5,correct_answer,False,correct_answer; gözlənilən cavab: 90 000 AZN; gözlənilən mənbələr: ['P-01']; tapılan mənbələr: ['P-01'],14,4.67
+google/gemma-3-4b-it,Q02,fact,Günəş enerjisi layihəsi hansı regiondadır?,Naxçıvan,"P-07, P-08, P-11",0.274,3,5,5,correct_answer,False,"correct_answer; gözlənilən cavab: Naxçıvan; gözlənilən mənbələr: ['P-07']; tapılan mənbələr: ['P-07', 'P-08', 'P-11']",13,4.33
+google/gemma-3-4b-it,Q03,fact,Diaqnostika mərkəzi layihəsinin müddəti neçə aydır?,"16
+P-20","P-20, P-29, P-27",0.273,4,3,3,partial_answer,True,"partial_answer; gözlənilən cavab: 16 ay; gözlənilən mənbələr: ['P-20']; tapılan mənbələr: ['P-20', 'P-27', 'P-29']",10,3.33
+google/gemma-3-4b-it,Q04,fact,P-03 hansı kateqoriyaya aiddir?,"İnfrastruktur.
+ID: P-03",P-03,0.532,4,5,5,correct_answer,False,correct_answer; gözlənilən cavab: İnfrastruktur; gözlənilən mənbələr: ['P-03']; tapılan mənbələr: ['P-03'],14,4.67
+google/gemma-3-4b-it,Q05,fact,Soyuducu anbar layihəsinin statusu nədir?,"Planlaşdırılır.
+
+ID-lər: P-29","P-28, P-29, P-27",0.605,5,5,5,correct_answer,False,"correct_answer; gözlənilən cavab: Planlaşdırılır; gözlənilən mənbələr: ['P-29']; tapılan mənbələr: ['P-27', 'P-28', 'P-29']",15,5.0
+google/gemma-3-4b-it,Q06,calculation,Enerji səmərəliliyi layihəsi ilə Suvarma layihəsinin büdcə fərqi nə qədərdir?,Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,"P-09, P-11, P-07",0.464,5,1,1,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: 5 000 AZN; gözlənilən mənbələr: ['P-01', 'P-09']; tapılan mənbələr: ['P-07', 'P-09', 'P-11']",7,2.33
+google/gemma-3-4b-it,Q07,calculation,Ən yüksək büdcəli layihə hansıdır?,Soyuducu anbar layihəsi (P-29),"P-01, P-26, P-29",0.446,5,1,0,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: Külək enerjisi layihəsi — 320 000 AZN; gözlənilən mənbələr: ['P-08']; tapılan mənbələr: ['P-01', 'P-26', 'P-29']",6,2.0
+google/gemma-3-4b-it,Q08,calculation,P-01 və P-03 layihələrinin ümumi büdcəsi nə qədərdir?,"270 000 AZN
+
+Mənbə ID-ləri: P-01, P-03","P-01, P-03",0.824,5,5,5,correct_answer,False,"correct_answer; gözlənilən cavab: 270 000 AZN; gözlənilən mənbələr: ['P-01', 'P-03']; tapılan mənbələr: ['P-01', 'P-03']",15,5.0
+google/gemma-3-4b-it,Q09,calculation,10 aydan uzun müddətli layihələrdən üçünü yaz.,"P-30 — Aqrotexnika layihəsi
+P-15 — Müəllim təlimi layihəsi
+P-26 — Taxıl istehsalı layihəsi
+
+Mənbə ID-ləri: P-26, P-15, P-30","P-26, P-15, P-30",0.882,5,1,0,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: P-03, P-06, P-07; gözlənilən mənbələr: ['P-03', 'P-06', 'P-07']; tapılan mənbələr: ['P-15', 'P-26', 'P-30']",6,2.0
+google/gemma-3-4b-it,Q10,calculation,Ən uzunmüddətli layihə neçə ay davam edir?,13,"P-27, P-29, P-26",0.233,3,1,0,incorrect_answer,True,"incorrect_answer; gözlənilən cavab: 18 ay; gözlənilən mənbələr: ['P-08']; tapılan mənbələr: ['P-26', 'P-27', 'P-29']",4,1.33
+google/gemma-3-4b-it,Q11,unknown,P-01 layihəsinin rəhbəri kimdir?,Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,P-01,0.576,5,5,5,correct_refusal,False,correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-01'],15,5.0
+google/gemma-3-4b-it,Q12,unknown,Günəş enerjisi layihəsini hansı şirkət maliyyələşdirir?,Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,"P-07, P-08, P-12",0.579,5,5,5,correct_refusal,False,"correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-07', 'P-08', 'P-12']",15,5.0
+google/gemma-3-4b-it,Q13,unknown,Layihələrdə neçə işçi çalışır?,Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,"P-13, P-09, P-06",0.675,5,5,5,correct_refusal,False,"correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-06', 'P-09', 'P-13']",15,5.0
+google/gemma-3-4b-it,Q14,unknown,P-02 layihəsi hansı tarixdə tamamlanacaq?,Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,P-02,0.443,5,5,5,correct_refusal,False,correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-02'],15,5.0
+google/gemma-3-4b-it,Q15,unknown,Layihələrin gəlirliliyi neçə faizdir?,Bu məlumat təqdim olunan mənbələrdə göstərilməyib.,"P-09, P-26, P-27",0.419,5,5,5,correct_refusal,False,"correct_refusal; gözlənilən cavab: Bu məlumat təqdim olunan mənbələrdə göstərilməyib.; gözlənilən mənbələr: []; tapılan mənbələr: ['P-09', 'P-26', 'P-27']",15,5.0
